@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login-s.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-xl">
+        <div class="row m-3 mb-5 p-1 justify-content-betwwen align-items-center">
+            <div class="col  d-none d-lg-flex">
+                <div class="h4 fw-light">Regular Forms</div>
+            </div>
+            <div class="col"></div>
+            <div class="col d-none d-lg-flex align-items-center gap-3">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control inpt-text" id="floatingInput" placeholder="name@example.com">
+                    <label class="lbl" for="floatingInput">Search...</label>
+                </div>
+                <i class="fa-solid fa-table-cells-large" style="color: #212529;"></i>
+                <i class="fa-solid fa-bell" style="color: #212529;">
+                    <span class="position-absolute top10 start-10 translate-middle badge rounded-circle bg-danger">
+                        5
+                    </span>
+                </i>
+                <i class="fa-solid fa-user" style="color: #212529;"></i>
+            </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <nav class="navbar d-sm-flex d-lg-none  mb-5 ">
+              <div class="container-lg">
+                <div class="h4 fw-light">Regular Forms</div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+            
+            <div class="form-input rounded-2 col-12 col-lg-6">
+                <form class="row g-3">
+                    <div class="header-form">
+                        <p class="h5 fw-light" style="margin-left:70px;">Stacked Form</p>
+                        <i class="icon-frm bg-success rounded-1 d-flex justify-content-center align-items-center fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="col-12 inputs form-floating">
+                        <input type="email" class="form-control inpt-text" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="col-12 inputs form-floating">
+                        <input type="password" class="form-control inpt-text" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Check me out
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-lg btn-success mb-2">Sign in</button>
+                    </div>
+                  </form>
+            </div>
+            <div class="form-input rounded-2 col-12 col-lg-6">
+                <form class="row g-3">
+                        <div class="header-form">
+                            <p class="h5 fw-light" style="margin-left:70px;">Stacked Form</p>
+                            <i class="icon-frm bg-success rounded-1 d-flex justify-content-center align-items-center fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="row mb-3 pt-5">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                <input type="email" class="form-control inpt-text-2" id="inputEmail3">
+                                </div>
+                        </div>
+                        <div class="row mb-3 pt-2">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                <input type="password" class="form-control inpt-text-2" id="inputPassword3">
+                                </div>
+                        </div> 
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-lg btn-success mt-4">Sign in</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-5 position-relative">
+            <div class="lable-top">
+                <p class="lbl-top text-light fw-light h5 bg-success rounded-1 d-flex justify-content-center align-items-center">Form Elements</p>
+            </div>
+            <form class="col form-element rounded-2" style="padding-top: 80px;">
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="lbl-fild col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="lbl-fild col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="lbl-fild col-sm-2 col-form-label" >Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="placeholder">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputPassword3" class="lbl-fild col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" disabled disabled placeholder="Disabled input here.." style="cursor:no-drop;">
+                    </div>
+                  </div>
+                <fieldset class="row mb-3">
+                  <legend class="lbl-fild col-form-label col-sm-2 pt-0">Radios</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        First radio
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Second radio
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="row mb-3">
+                  <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Example checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-10 offset-sm-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                          Example checkbox
+                        </label>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <label class="lbl-fild col-form-label col-sm-2 form-check-label" for="inlineCheckbox1">Radios</label>
+                    <div class="col-sm-10 offset-sm-2" style="transform:translateY(-25px);" >
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">a</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">b</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">c</label>
+                          </div>
+                    </div>
+                </div>
+              </form>
+        </div>
+
+        <div class="row mt-5 mb-5 position-relative">
+            <div class="lable-top">
+                <p class="lbl-top text-light fw-light h5 bg-success rounded-1 d-flex justify-content-center align-items-center">Form Elements</p>
+                <form class="col form-element rounded-2" style="padding-top: 80px;">
+                    <div class="container-lg">
+                        <div class="row">
+                            <div class="col">
+                                <fieldset class="row mb-3">
+                                    <legend class="lbl-fild col-form-label col-sm-2 pt-0">Custom</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Checked 
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Unchecked 
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked disabled>
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            Disabled Checked 
+                                            </label>
+                                        </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" disabled>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Disabled Unchecked 
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                       radio on
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                       radio off
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" disabled checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                      Disabled radio on
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" disabled>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Disabled radio off  
+                                    </label>
+                                  </div>
+                            </div>
+                        </div>
+                    
+                        <form>
+                            <legend class="lbl-fild col-form-label col-sm-2 float-start">Input with success</legend>
+                            <div class="row mb-3 ms-5">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="k" placeholder="name@example.com">
+                                    <label class="text-success" for="k">Email address</label>
+                                </div>
+                            </div>
+                            <legend class="lbl-fild col-form-label col-sm-2 float-start">Input with error</legend>
+                            <div class="row mb-3 ms-5">
+                                <div class="form-floating mb-3">
+                                  <input type="password" class="form-control" id="z" placeholder="Password">
+                                  <label class="text-danger" for="z">Password</label>
+                                </div>
+                            </div>
+                          </form>
+                          <div class="inline-input-laoyut d-flex justify-content-between ms-5">
+                            <div class="input-bottom">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="width: 550px ;">
+                                    <label for="floatingInput">Email address</label>
+                                  </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="input-bottom">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                      </div>
+                                </div>
+                                <div class="input-bottom">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                      </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="container-lg mt-5 position-relative">
+            <div class="row justify-content-between">
+              <div class="col-8">
+                <ul class="ul-link d-flex gap-3">
+                  <li>
+                    <a href="#">Creative Tim</a>
+                  </li>
+                  <li><a href="#"> About Us </a></li>
+                  <li>
+                    <a href="#"> Blog </a>
+                  </li>
+                  <li>
+                    <a href="#"> Licenses </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <p>© 2023 Creative Tim, made with  for a better web</p>
+              </div>
+            </div>
+        </footer>
+
+        <div class="right-menu h-100 overflow-scroll d-none d-lg-inline">
+          <div class="line"></div>
+          <div class="d-flex justify-content-center">
+            <i class="icon-r-menu rounded-circle bg-light d-flex justify-content-center align-items-center fa-brands fa-vimeo-v fa-lg" style="color: #41b883;"></i>
+            <p class="text-light fw-bold hover-accordion ms-2 d-none" style="transform: translateY(-10px);">VUE MD PRO</p>
+          </div>
+          <div class="line line-2"></div>
+          <div class="accordion accordion-user" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <img class="img-r-menu rounded-circle mb-3" src="./img/women-img.jpg" alt="" width="40px">
+                    <p class="hover-accordion ms-2  d-none">Tania Andrew</p>
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body hover-accordion d-none">
+
+                      <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                        <p class="fw-bold text-light icon-accordion">MP</p>
+                        <p class="text-center">My profile</p>
+                      </a>
+                      <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                        <p class="fw-bold text-light icon-accordion">EP</p>
+                        <p class="text-center">Edite Profile</p>
+                      </a>
+                      <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                        <p class="fw-bold text-light icon-accordion">S</p>
+                        <p class="text-center">Settings</p>
+                      </a>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+          <div class="">
+            <!-- accordion -->
+            <!-- accordion-1 -->
+            <a class="btn btn-link-1 d-flex gap-5 " href="" style="height: 45px;">
+              <i class="fa-brands fa-square-lastfm fa-2xl" style="color: #ffffff; transform:translateY(15px);"></i>
+              <p class="hover-accordion text-icon ms-2 d-none">Dashboard</p>
+            </a>
+            </div>
+            <!-- accordion-2 -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header">
+                  <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+                      <i class="mt-3 fa-regular fa-image fa-2xl" style="color: #ffffff;"></i>
+                      <p class="hover-accordion text-icon ms-2 d-none">Pages</p>
+                  </button>
+                  </h2>
+                  <div id="collapse-2" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body hover-accordion d-none">
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">P</p>
+                          <p class="text-center">Pricing</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">RS</p>
+                          <p class="text-center">RTL Support</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">T</p>
+                          <p class="text-center">Timeline</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">L</p>
+                          <p class="text-center">Login</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">R</p>
+                          <p class="text-center">Register</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">LS</p>
+                          <p class="text-center">Look Screen</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">UP</p>
+                          <p class="text-center">User Profile</p>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- accordion-3 -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header">
+                  <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                      <i class="mt-3 fa-solid fa-table-cells fa-2xl" style="color: #ffffff;"></i>
+                      <p class="hover-accordion text-icon ms-2 d-none">Components</p>
+                  </button>
+                  </h2>
+                  <div id="collapse-3" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body hover-accordion d-none">
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">B</p>
+                          <p class="text-center">Buttons</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">GS</p>
+                          <p class="text-center">Grid system</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">P</p>
+                          <p class="text-center">Panels</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">SA</p>
+                          <p class="text-center">Sweet Alert</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">N</p>
+                          <p class="text-center">Notifications</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">I</p>
+                          <p class="text-center">Icons</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">T</p>
+                          <p class="text-center">Typograghy</p>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- accordion-4 -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header">
+                  <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+                      <i class="mt-3 fa-solid fa-clipboard fa-2xl" style="color: #ffffff;"></i>
+                      <p class="hover-accordion text-icon ms-2 d-none">Forms</p>
+                  </button>
+                  </h2>
+                  <div id="collapse-4" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body hover-accordion d-none">
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="./login.html">
+                          <p class="fw-bold text-light icon-accordion">RF</p>
+                          <p class="text-center">Regular Forms</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">EF</p>
+                          <p class="text-center">Extended Forms</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">VF</p>
+                          <p class="text-center">Validation Forms</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">W</p>
+                          <p class="text-center">Wizard</p>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- accordion-5 -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header">
+                  <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
+                      <i class="mt-3 fa-solid fa-table-cells fa-2xl" style="color: #ffffff;"></i>
+                      <p class="hover-accordion text-icon ms-2 d-none">Tables</p>
+                  </button>
+                  </h2>
+                  <div id="collapse-5" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body hover-accordion d-none">
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">RT</p>
+                          <p class="text-center">Regular Tables</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">ET</p>
+                          <p class="text-center">Extended Tables</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">PT</p>
+                          <p class="text-center">Paginated Tables</p>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+             <!-- accordion-6 -->
+             <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header">
+                  <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
+                      <i class="mt-3 fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>
+                      <p class="hover-accordion text-icon ms-2 d-none">Maps</p>
+                  </button>
+                  </h2>
+                  <div id="collapse-6" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body hover-accordion d-none">
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">GM</p>
+                          <p class="text-center">Google Maps</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">FSM</p>
+                          <p class="text-center">Full Screen Maps</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">VM</p>
+                          <p class="text-center">Vector Maps</p>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- accordion-btn -->
+            <a class="btn btn-link-1 d-flex gap-2" href="">
+              <i class="mt-3 fa-brands fa-square-xing fa-2xl" style="color: #ffffff;"></i>
+              <p class="hover-accordion text-icon ms-2 d-none">Widgets</p>
+            </a>
+            <a class="btn btn-link-1 d-flex gap-2" href="">
+              <i class="mt-4 fa-solid fa-chart-line fa-2xl" style="color: #ffffff;"></i>
+              <p class="hover-accordion text-icon ms-2 d-none">Charts</p>
+            </a>
+            <a class="btn btn-link-1 d-flex gap-2" href="">
+              <i class="mt-4 fa-solid fa-table fa-2xl" style="color: #ffffff;"></i>
+              <p class="hover-accordion text-icon ms-2 d-none">Calendar</p>
+            </a>
+
+          </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-xl">
+        <div class="row m-3 mb-5 p-1 justify-content-betwwen align-items-center">
+            <div class="col d-none d-lg-flex">
+                <div class="h4 fw-light">Dashboard</div>
+            </div>
+            <div class="col"></div>
+            <div class="col d-none d-lg-flex align-items-center gap-3">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control inpt-text" id="floatingInput" placeholder="name@example.com">
+                    <label class="lbl" for="floatingInput">Search...</label>
+                </div>
+                <i class="fa-solid fa-table-cells-large" style="color: #212529;"></i>
+                <i class="fa-solid fa-bell" style="color: #212529;">
+                    <span class="position-absolute top10 start-10 translate-middle badge rounded-circle bg-danger">
+                        5
+                    </span>
+                </i>
+                <i class="fa-solid fa-user" style="color: #212529;"></i>
+            </div>
+            <!-- open-btn -->
+            <div class="row mb-3">
+              <div class="col">
+                <nav class="navbar d-sm-flex d-lg-none  mb-5 ">
+                  <div class="container-lg">
+                    <a class="navbar-brand h4 fw-light" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+        </div>
+        <div class="row g-5 p-1 justify-content-between ">
+            <!-- card-1 -->
+            <div class=" cart-item-1 col-sm-12 col-lg-6 col-xl-3">
+                <div class="card mb-5 h-100 " >
+                    <div class="row g-0">
+                      <div class="col icon icon-1 col-sm-4 rounded-1 d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+                      </div>
+                      <div class="col"></div>
+                      <div class="col-sm-8">
+                        <div class="card-body float-end">
+                            <small class="card-title text-secondary">Folowers</small>
+                            <p class="card-text h2 fw-light">+245</p>
+                        </div>
+                        <i class="sub-icon fa-solid fa-arrow-rotate-right fa-xs" style="color: #636363;"></i>
+                        <small class="sub-lbl text-secondary">Just Updated</small>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- card-2 -->
+            <div class=" cart-item-1 col-sm-12 col-lg-6 col-xl-3">
+                <div class="card mb-5 h-100 " >
+                    <div class="row g-0">
+                      <div class="icon icon-2 col-sm-4 rounded-1 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-chart-simple fa-2xl" style="color: #ffffff;"></i>
+                      </div>
+                      <div class="col"></div>
+                      <div class="col-sm-8">
+                        <div class="card-body float-end">
+                            <small class="card-title text-secondary">Website Visits</small>
+                            <p class="card-text h3 fw-light">75.521</p>
+                        </div>
+                        <i class="sub-icon fa-solid fa-tag fa-xs" style="color: #3f3f3f;"></i>
+                        <small class="sub-lbl text-secondary">Tracked from Google Analytics</small>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- card-3 -->
+            <div class=" cart-item-1 col-sm-12 col-lg-6 col-xl-3">
+                <div class="card mb-5 h-100 " >
+                    <div class="row g-0">
+                      <div class="icon icon-3 col-sm-4 rounded-1 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-shop fa-2xl" style="color: #ffffff;"></i>
+                      </div>
+                      <div class="col"></div>
+                      <div class="col-sm-8">
+                        <div class="card-body float-end">
+                            <small class="card-title text-secondary">Revenue</small>
+                            <p class="card-text h4 fw-light">$ 34,245</p>
+                        </div>
+                        <i class="sub-icon fa-regular fa-calendar-days fa-xs" style="color: #3f3f3f;"></i>
+                        <small class="sub-lbl text-secondary">Last 24 Hours</small>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- card-4 -->
+            <div class="cart-item-1 col-sm-12 col-lg-6 col-xl-3">
+                <div class="card mb-5 h-100 " >
+                    <div class="row g-0">
+                      <div class="icon icon-4 col-sm-4 rounded-1 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-couch fa-2xl" style="color: #ffffff;"></i>
+                      </div>
+                      <div class="col"></div>
+                      <div class="col-sm-8">
+                        <div class="card-body float-end">
+                            <small class="card-title text-secondary">Bookings</small>
+                            <p class="card-text h2 fw-light">184</p>
+                        </div>
+                        <i class="sub-icon fa-solid fa-triangle-exclamation fa-xs" style="color: #f44336;"></i>
+                        <small class="sub-lbl text-secondary">Get More Space...</small>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <!-- slider-card -->
+        <div class="row mt-5">
+          <!-- chart-1 -->
+            <div class="col col-sm-12 col-xl-4">
+                <div class="c card-slide card mb-3 rounded-2 position-relative">
+                      <img class="chart chart-1 rounded-2" src="./img/3.png" alt="">
+                      <div class="icon-edite d-flex justify-content-center gap-3">
+                        <i class="icon-slider fa-solid fa-arrow-rotate-right" style="color: #17c2d8;"></i>
+                        <i class="icon-slider fa-solid fa-pen" style="color: #999999;"></i>
+                      </div>
+                    <div class="card-body">
+                      <h5 class="card-title h4 fw-light">Website Views</h5>
+                      <p class="card-text mb-5 text-secondary">Last Campaign Performance</p>
+                      <i class="icon-slid-card fa-regular fa-clock fa-xs" style="color: #999999;"></i>
+                      <p class="card-text sub-txt-card w-100"><small class="text-body-secondary">updated 10 days ago</small></p>
+                    </div>
+                  </div>
+            </div>
+          <!-- chart-2 -->
+            <div class="col col-sm-12 col-xl-4">
+              <div class="c card-slide card mb-3 rounded-2 position-relative">
+                  <img class="chart chart-2 rounded-2" src="./img/2.png" alt="">
+                  <div class="icon-edite d-flex justify-content-center gap-3">
+                    <i class="icon-slider fa-solid fa-arrow-rotate-right" style="color: #17c2d8;"></i>
+                    <i class="icon-slider fa-solid fa-pen" style="color: #999999;"></i>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title h4 fw-light">Daily Sales</h5>
+                    <p class="card-text mb-5 text-secondary">increase in today sales.</p>
+                    <i class="icon-slid-card fa-regular fa-clock fa-xs" style="color: #999999;"></i>
+                    <p class="card-text sub-txt-card w-100"><small class="text-body-secondary">updated 4 minutes ago</small></p>
+                  </div>
+                </div>
+          </div>
+          <!-- chart-3 -->
+          <div class="col col-sm-12 col-xl-4">
+            <div class="c card-slide card mb-3 rounded-2 position-relative">
+                <img class="chart chart-3 rounded-2" src="./img/1.png" alt="">
+                <div class="icon-edite d-flex justify-content-center gap-3">
+                  <i class="icon-slider fa-solid fa-arrow-rotate-right" style="color: #17c2d8;"></i>
+                  <i class="icon-slider fa-solid fa-pen" style="color: #999999;"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title h4 fw-light">Completed Tasks</h5>
+                  <p class="card-text mb-5 text-secondary">Last Campaign Performance</p>
+                  <i class="icon-slid-card fa-regular fa-clock fa-xs" style="color: #999999;"></i>
+                  <p class="card-text sub-txt-card w-100"><small class="text-body-secondary">campaign sent 26 minutes ago</small></p>
+                </div>
+              </div>
+        </div>
+        </div>
+        <div class="country w-100 mt-5 mb-5">
+          <div class="row position-relative">
+            <div class="col-12">
+              <div class="header ms-3 d-flex align-items-center">
+                <i class="icon-country-h rounded-1 d-flex justify-content-center align-items-center fa-solid fa-globe fa-lg" style="color: #ffffff;"></i>
+                <div class="h5 fw-light mt-2">Global Sales by Top Locations</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="content">
+                      <table class="table ms-3 mt-2 overflow-x-auto">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="m-px d-none d-sm-flex justify-content-center fa-solid fa-flag-usa fa-xs" style="color: #2e5394;"></i>
+                            </td>
+                            <td>
+                              <p class="m-px me-5">USA</p>
+                            </td>
+                            <td>
+                              <p class="m-px">2.920</p>
+                            </td>
+                            <td>
+                              <p class="m-px">53.23%</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="m-px d-none d-sm-flex justify-content-center fa-solid fa-flag-usa fa-xs" style="color: #2e5394;"></i>
+                            </td>
+                            <td>
+                              <p class="m-px">Germany</p>
+                            </td>
+                            <td>
+                              <p class="m-px">1.300</p>
+                            </td>
+                            <td>
+                              <p class="m-px">20.43%</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="m-px d-none d-sm-flex justify-content-center fa-solid fa-flag-usa fa-xs" style="color: #2e5394;"></i>
+                            </td>
+                            <td>
+                              <p class="m-px">Australia</p>
+                            </td>
+                            <td>
+                              <p class="m-px">760</p>
+                            </td>
+                            <td>
+                              <p class="m-px">10.35%</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="m-px d-none d-sm-flex justify-content-center fa-solid fa-flag-usa fa-xs" style="color: #2e5394;"></i>
+                            </td>
+                            <td>
+                              <p class="m-px">United Kingdom</p>
+                            </td>
+                            <td>
+                              <p class="m-px">690</p>
+                            </td>
+                            <td>
+                              <p class="m-px">7.87%</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="m-px d-none d-sm-flex justify-content-center fa-solid fa-flag-usa fa-xs" style="color: #2e5394;"></i>
+                            </td>
+                            <td>
+                              <p class="m-px">Romania</p>
+                            </td>
+                            <td>
+                              <p class="m-px">600</p>
+                            </td>
+                            <td>
+                              <p class="m-px">5.94%</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="m-px d-none d-sm-flex justify-content-center fa-solid fa-flag-usa fa-xs" style="color: #2e5394;"></i>
+                            </td>
+                            <td>
+                              <p class="m-px">Brasil</p>
+                            </td>
+                            <td>
+                              <p class="m-px">550</p>
+                            </td>
+                            <td>
+                              <p class="m-px">4.34%</p>
+                            </td>
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+                </div>
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./img/4.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <!-- chart-1 -->
+            <div class="col-sm-12 col-xl-4">
+                <div class="c card-slide card mb-3 rounded-2 position-relative">
+                      <img class="chart img-fluid rounded-2" src="./img/card-1.jpg" alt="">
+                      <div class="icon-edite d-flex justify-content-center gap-3">
+                        <i class="icon-slider fa-solid fa-arrow-rotate-right" style="color: #17c2d8;"></i>
+                        <i class="icon-slider fa-solid fa-pen" style="color: #999999;"></i>
+                      </div>
+                    <div class="card-body">
+                      <h5 class="card-title h4 fw-light text-center">Cozy 5 Stars Apartment</h5>
+                      <p class="card-text mb-5 text-secondary text-center">The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona.</p>
+                      <i class="icon-slid-card fa-regular fa-clock fa-xs" style="color: #999999;"></i>
+                      <p class="card-text sub-txt-card w-100"><small class="text-body-secondary">Barcelona, Spain</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-xl-4">
+              <div class="c card-slide card mb-3 rounded-2 position-relative">
+                    <img class="chart img-fluid rounded-2" src="./img/card-2.jpg" alt="">
+                    <div class="icon-edite d-flex justify-content-center gap-3">
+                      <i class="icon-slider fa-solid fa-arrow-rotate-right" style="color: #17c2d8;"></i>
+                      <i class="icon-slider fa-solid fa-pen" style="color: #999999;"></i>
+                    </div>
+                  <div class="card-body">
+                    <h5 class="card-title h4 fw-light text-center">Beautiful Castle</h5>
+                    <p class="card-text mb-5 text-secondary text-center">The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Milan.</p>
+                    <i class="icon-slid-card fa-regular fa-clock fa-xs" style="color: #999999;"></i>
+                    <p class="card-text sub-txt-card w-100"><small class="text-body-secondary"> Milan, Italy</small></p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-xl-4">
+            <div class="c card-slide card mb-3 rounded-2 position-relative">
+                  <img class="chart img-fluid rounded-2" src="./img/card-3.jpg" alt="">
+                  <div class="icon-edite d-flex justify-content-center gap-3">
+                    <i class="icon-slider fa-solid fa-arrow-rotate-right" style="color: #17c2d8;"></i>
+                    <i class="icon-slider fa-solid fa-pen" style="color: #999999;"></i>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title h4 fw-light text-center">Office Studio</h5>
+                  <p class="card-text mb-5 text-secondary text-center">The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the night life in London, UK.</p>
+                  <i class="icon-slid-card fa-regular fa-clock fa-xs" style="color: #999999;"></i>
+                  <p class="card-text sub-txt-card w-100"><small class="text-body-secondary">London, UK</small></p>
+                </div>
+              </div>
+        </div>
+        </div>
+        </div>
+
+      <footer class="container-lg mt-5 position-relative">
+          <div class="row justify-content-between">
+            <div class="col-8">
+              <ul class="ul-link d-flex gap-3">
+                <li>
+                  <a href="#">Creative Tim</a>
+                </li>
+                <li><a href="#"> About Us </a></li>
+                <li>
+                  <a href="#"> Blog </a>
+                </li>
+                <li>
+                  <a href="#"> Licenses </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <p>© 2023 Creative Tim, made with  for a better web</p>
+            </div>
+          </div>
+      </footer>
+    </div>
+
+      <div class="right-menu h-100 overflow-scroll d-none d-lg-inline">
+          <div class="line"></div>
+          <div class="d-flex justify-content-center">
+            <i class="icon-r-menu rounded-circle bg-light d-flex justify-content-center align-items-center fa-brands fa-vimeo-v fa-lg" style="color: #41b883;"></i>
+            <p class="text-light fw-bold hover-accordion ms-2 d-none" style="transform: translateY(-10px);">VUE MD PRO</p>
+          </div>
+          <div class="line line-2"></div>
+          <div class="accordion accordion-user" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <img class="img-r-menu rounded-circle mb-3" src="./img/women-img.jpg" alt="" width="40px">
+                    <p class="hover-accordion ms-2  d-none">Tania Andrew</p>
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body hover-accordion d-none">
+
+                      <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                        <p class="fw-bold text-light icon-accordion">MP</p>
+                        <p class="text-center">My profile</p>
+                      </a>
+                      <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                        <p class="fw-bold text-light icon-accordion">EP</p>
+                        <p class="text-center">Edite Profile</p>
+                      </a>
+                      <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                        <p class="fw-bold text-light icon-accordion">S</p>
+                        <p class="text-center">Settings</p>
+                      </a>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+          <div class="">
+            <!-- accordion -->
+            <!-- accordion-1 -->
+            <a class="btn btn-link-1 d-flex gap-5 " href="" style="height: 45px;">
+              <i class="fa-brands fa-square-lastfm fa-2xl" style="color: #ffffff; transform:translateY(15px);"></i>
+              <p class="hover-accordion text-icon ms-2 d-none">Dashboard</p>
+            </a>
+            </div>
+            <!-- accordion-2 -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header">
+                  <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+                      <i class="mt-3 fa-regular fa-image fa-2xl" style="color: #ffffff;"></i>
+                      <p class="hover-accordion text-icon ms-2 d-none">Pages</p>
+                  </button>
+                  </h2>
+                  <div id="collapse-2" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body hover-accordion d-none">
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">P</p>
+                          <p class="text-center">Pricing</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">RS</p>
+                          <p class="text-center">RTL Support</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">T</p>
+                          <p class="text-center">Timeline</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">L</p>
+                          <p class="text-center">Login</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">R</p>
+                          <p class="text-center">Register</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">LS</p>
+                          <p class="text-center">Look Screen</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">UP</p>
+                          <p class="text-center">User Profile</p>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- accordion-3 -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header">
+                  <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                      <i class="mt-3 fa-solid fa-table-cells fa-2xl" style="color: #ffffff;"></i>
+                      <p class="hover-accordion text-icon ms-2 d-none">Components</p>
+                  </button>
+                  </h2>
+                  <div id="collapse-3" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body hover-accordion d-none">
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">B</p>
+                          <p class="text-center">Buttons</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">GS</p>
+                          <p class="text-center">Grid system</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">P</p>
+                          <p class="text-center">Panels</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">SA</p>
+                          <p class="text-center">Sweet Alert</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">N</p>
+                          <p class="text-center">Notifications</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">I</p>
+                          <p class="text-center">Icons</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">T</p>
+                          <p class="text-center">Typograghy</p>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- accordion-4 -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header">
+                  <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+                      <i class="mt-3 fa-solid fa-clipboard fa-2xl" style="color: #ffffff;"></i>
+                      <p class="hover-accordion text-icon ms-2 d-none">Forms</p>
+                  </button>
+                  </h2>
+                  <div id="collapse-4" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body hover-accordion d-none">
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="./login.html">
+                          <p class="fw-bold text-light icon-accordion">RF</p>
+                          <p class="text-center">Regular Forms</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">EF</p>
+                          <p class="text-center">Extended Forms</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">VF</p>
+                          <p class="text-center">Validation Forms</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">W</p>
+                          <p class="text-center">Wizard</p>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- accordion-5 -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header">
+                  <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
+                      <i class="mt-3 fa-solid fa-table-cells fa-2xl" style="color: #ffffff;"></i>
+                      <p class="hover-accordion text-icon ms-2 d-none">Tables</p>
+                  </button>
+                  </h2>
+                  <div id="collapse-5" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body hover-accordion d-none">
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">RT</p>
+                          <p class="text-center">Regular Tables</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">ET</p>
+                          <p class="text-center">Extended Tables</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">PT</p>
+                          <p class="text-center">Paginated Tables</p>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+             <!-- accordion-6 -->
+             <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header">
+                  <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
+                      <i class="mt-3 fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>
+                      <p class="hover-accordion text-icon ms-2 d-none">Maps</p>
+                  </button>
+                  </h2>
+                  <div id="collapse-6" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body hover-accordion d-none">
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">GM</p>
+                          <p class="text-center">Google Maps</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">FSM</p>
+                          <p class="text-center">Full Screen Maps</p>
+                        </a>
+                        <a class="btn btn-primary hover-accordion-user d-flex gap-2" href="#">
+                          <p class="fw-bold text-light icon-accordion">VM</p>
+                          <p class="text-center">Vector Maps</p>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- accordion-btn -->
+            <a class="btn btn-link-1 d-flex gap-2" href="">
+              <i class="mt-3 fa-brands fa-square-xing fa-2xl" style="color: #ffffff;"></i>
+              <p class="hover-accordion text-icon ms-2 d-none">Widgets</p>
+            </a>
+            <a class="btn btn-link-1 d-flex gap-2" href="">
+              <i class="mt-4 fa-solid fa-chart-line fa-2xl" style="color: #ffffff;"></i>
+              <p class="hover-accordion text-icon ms-2 d-none">Charts</p>
+            </a>
+            <a class="btn btn-link-1 d-flex gap-2" href="">
+              <i class="mt-4 fa-solid fa-table fa-2xl" style="color: #ffffff;"></i>
+              <p class="hover-accordion text-icon ms-2 d-none">Calendar</p>
+            </a>
+
+          </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
